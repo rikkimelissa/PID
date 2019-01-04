@@ -3,15 +3,15 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 
-###Simulator.
+### Simulator
 
 This project uses the Udacity Term2 Simulator which contains the PID project.
 
-###Goals
+### Goals
 
 In this project the goal is to use a PID controller to navigate a car around a race track using cross track error.
-
-###Details
+ 
+### Details
 
 This controller uses basic feedback control to keep the car within the track. Although set up as PID control, my final controller actually only uses PD control, as the three terms had the following effects:
 
