@@ -17,6 +17,7 @@ public:
   double Ki;
   double Kd;
 
+  bool initialized;
   /*
   * Constructor
   */
@@ -30,7 +31,7 @@ public:
   /*
   * Initialize PID.
   */
-  void Init(double Kp, double Ki, double Kd);
+  void Init(double KP, double KI, double KD);
 
   /*
   * Update the PID error variables given cross track error.
@@ -40,7 +41,11 @@ public:
   /*
   * Calculate the total PID error.
   */
-  double TotalError();
+  // double TotalError();
+
+  // Calculate steering command
+  double CalculateSteer();
+
 };
 
 #endif /* PID_H */
