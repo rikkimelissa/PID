@@ -58,8 +58,8 @@ int main()
           * another PID controller to control the speed!
           */
 
-          double Kp = .2;
-          double Kd = 1;
+          double Kp = 1;
+          double Kd = 4;
           double Ki = 0;
 
           if (!pid.initialized){
@@ -77,7 +77,7 @@ int main()
           msgJson["steering_angle"] = steer_value;
 
           double throttle;
-          if (speed < 10){
+          if (speed < 20){
             throttle = .3;
           }
           else {
